@@ -8,28 +8,32 @@ export default function SunanAmpelPage() {
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-12">
-        <div className="relative mb-24">
-          <div className="aspect-[21/9] overflow-hidden">
-            <img
-              src="./images/makam.png"
-              alt="Makam Sunan Ampel"
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-            />
+        <div className="relative mb-16 md:mb-24">
+  <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-xl">
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+    <img
+      src="/images/makam.png"
+      alt="Makam Sunan Ampel"
+      className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+    />
 
-            <div className="absolute bottom-8 left-8 right-8 text-white">
-              <h1
-                className="text-4xl md:text-6xl font-bold leading-tight"
-                style={{ fontFamily: "Playfair Display" }}
-              >
-                Makam Sunan Ampel:
-                <br />
-                Jejak Dakwah Wali Songo di Surabaya
-              </h1>
-            </div>
-          </div>
-        </div>
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+    <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8 text-white">
+
+      <h1
+        className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight"
+        style={{ fontFamily: "Playfair Display" }}
+      >
+        Makam Sunan Ampel:
+        <br />
+        Jejak Dakwah Wali Songo di Surabaya
+      </h1>
+
+    </div>
+
+  </div>
+</div>
 
         {/* CONTENT */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
