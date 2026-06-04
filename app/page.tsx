@@ -1,65 +1,151 @@
-import Image from "next/image";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="bg-[#fbf9f4] text-[#1b1c19] min-h-screen">
+
+      <Navbar />
+
+      {/* HERO */}
+      <section className="max-w-5xl mx-auto text-center py-24 px-6">
+        <span className="tracking-[0.25em] text-[#b52619] text-sm font-semibold">
+          ARSIP DIGITAL
+        </span>
+
+        <h1
+          className="text-5xl md:text-7xl mt-6 font-bold"
+          style={{ fontFamily: "Playfair Display" }}
+        >
+          Jejak Peradaban Islam Nusantara
+        </h1>
+
+        <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+          Menelusuri jejak peradaban melalui arsitektur ikonik.
+          Memahami pentingnya pelestarian dan pengkajian akulturasi
+          arsitektur sebagai identitas budaya Indonesia.
+        </p>
+
+        <div className="w-24 h-px bg-[#b52619]/30 mx-auto mt-8" />
+      </section>
+
+      {/* CARD SECTION */}
+      <section className="max-w-7xl mx-auto px-6 md:px-16 pb-24">
+
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {/* CARD 1 */}
+          <article className="hover-card bg-white rounded-lg overflow-hidden border border-black/10">
+            <div className="museum-matte">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcKeW-jiNFYlgBaW35DqQJ9vxI-v9iGoNRemEeHBbb8pgO6t0l_aKzztClYjOahc4NDtq-itvOt31oepFZz31Tpz2FwklatbEGKHeonmEGhcqGrGmbypZUa8QgwIdNSS5kbHmnFZoUbx9aG7VQkUinhmuQFyFVh7GCYyYkaIuLCQemO9o-a5cmUVEJ0px-0xkh9rbjLmci3YbV1ELFXRT2PZ0TB9Hzv-3AQv6ZW6NPVGBUCxErfAfYLHjkabj2dsUKHBomfIUkQwo"
+                alt="Menara Kudus"
+                className="w-full aspect-[4/5] object-cover"
+              />
+            </div>
+
+            <div className="p-8">
+              <h2
+                className="text-2xl font-bold"
+                style={{ fontFamily: "Playfair Display" }}
+              >
+                Menara Kudus
+              </h2>
+
+              <p className="mt-4 text-gray-600">
+                Simbol harmoni abadi antara tradisi Hindu dan Islam.
+              </p>
+            </div>
+          </article>
+
+          {/* CARD 2 */}
+          <article className="hover-card bg-white rounded-lg overflow-hidden border border-black/10">
+            <div className="museum-matte">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwiH8ZwXKR3NIKKwl1PS9p6j-wuNT-qgLTVR80OQkDnZwOtrPnP64sQ9m1kxxo6hQnn83LSewSqtnwBK3nvqVx5yFd_oVVQIG4BS1PZmdrE5ld1XeMdeBPB-pF8mMWl4S3b0HRxyXm0EQtdMKSgeRmxoa_Uh_cJANfOQpnRpwRJZZ5LWkzHq6ExDRpfa_0cQfwK7jmT6N2z4OrWLysFXTcv4DywRu-pIzgFHkCeLlgWucKxbd48yyLyuWUtqtu2LzgtyIOS1dVbLg"
+                alt="Masjid Agung Banten"
+                className="w-full aspect-[4/5] object-cover"
+              />
+            </div>
+
+            <div className="p-8">
+              <h2
+                className="text-2xl font-bold"
+                style={{ fontFamily: "Playfair Display" }}
+              >
+                Masjid Agung Banten
+              </h2>
+
+              <p className="mt-4 text-gray-600">
+                Perpaduan budaya Jawa, Belanda dan Tiongkok.
+              </p>
+            </div>
+          </article>
+
+          {/* CARD 3 */}
+          <article className="hover-card bg-white rounded-lg overflow-hidden border border-black/10">
+            <div className="museum-matte">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXRrOXpEHyIBcuZY3LN6s5_i5fLuWjCQzdxzQv0IkdU-9YfEX39_VcbxY0ddXxDGHPvJZjc9lbDwDH-1i1XQjT4gvaDAVCG0CMV-DlcnaP4PLq_09AqiDn-LF8hIsFbTMxxDHhGv-CSlGRqpxynoyMzopnngKmc_cevtJ3xAM2-jppWi6dEJNfvw04_FtLBvyBjNM06t-Sa2FUull2t0BfWaZT975ufJmHCYftW4IsIdXiqJ-XsLWT-MUML7-qljRAY0HLcRqv5Kc"
+                alt="Makam Sunan Ampel"
+                className="w-full aspect-[4/5] object-cover"
+              />
+            </div>
+
+            <div className="p-8">
+              <h2
+                className="text-2xl font-bold"
+                style={{ fontFamily: "Playfair Display" }}
+              >
+                Makam Sunan Ampel
+              </h2>
+
+              <p className="mt-4 text-gray-600">
+                Salah satu pusat sejarah penyebaran Islam di Nusantara.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <p className="mt-8 text-md text-gray-600 leading-relaxed text-justify"> Perkembangan Islam di Nusantara merupakan proses sejarah yang berlangsung selama berabad-abad melalui perdagangan, pendidikan, dakwah, perkawinan, dan interaksi budaya. Proses ini membentuk karakter Islam Nusantara yang khas, yaitu berkembang secara damai, toleran, dan mampu beradaptasi dengan budaya lokal. Jejak perkembangan tersebut dapat dilihat melalui berbagai peninggalan sejarah, seperti Makam Sunan Ampel, Masjid Menara Kudus, dan Masjid Agung Demak yang memiliki nilai sejarah, budaya, dan keagamaan yang tinggi. Ketiga situs tersebut menjadi bukti bahwa penyebaran Islam di Indonesia dilakukan melalui pendekatan yang menghargai budaya lokal. Makam Sunan Ampel mencerminkan peran ulama dalam pendidikan dan dakwah Islam, Masjid Menara Kudus menunjukkan akulturasi Islam dengan budaya Hindu-Buddha dan Jawa, sedangkan Masjid Agung Demak menjadi simbol perkembangan peradaban Islam yang berkaitan dengan pendidikan, pemerintahan, dan kehidupan sosial. Selain sebagai warisan sejarah, ketiganya juga berfungsi sebagai pusat kegiatan keagamaan, sarana pendidikan, objek penelitian, dan destinasi wisata religi yang masih relevan hingga saat ini. </p>
+
+        {/* Latar Belakang SECTION (NEW) */}
+        <section className="max-w-5xl mx-auto mt-16 px-2">
+           <div className="text-center mb-12">
+
+
+    <h2
+      className="text-4xl md:text-5xl font-bold"
+      style={{ fontFamily: "Playfair Display" }}
+    >
+      Latar Belakang
+    </h2>
+  </div>
+
+          <p className="text-lg text-gray-600 leading-relaxed text-justify">
+            
+
+            Masuknya Islam ke Nusantara merupakan salah satu peristiwa penting yang membawa perubahan besar dalam berbagai aspek kehidupan masyarakat, mulai dari agama, pendidikan, sosial, 
+            budaya, ekonomi, hingga politik. Penyebaran Islam berlangsung secara damai 
+            melalui peran para ulama, pedagang, dan tokoh penyebar agama yang menggunakan 
+            pendekatan budaya sehingga masyarakat dapat menerima ajaran Islam tanpa harus meninggalkan seluruh tradisi yang telah diwariskan sebelumnya. Proses akulturasi tersebut melahirkan karakter Islam Nusantara yang moderat, inklusif, dan menghargai keberagaman budaya.
+          
+          <br /><br />
+
+            Bukti keberhasilan proses penyebaran Islam dapat ditemukan pada berbagai peninggalan sejarah, di antaranya 
+            {" "}<span className="font-medium text-[#b52619]">Menara Kudus</span>,
+            {" "}<span className="font-medium text-[#b52619]">Masjid Agung Banten</span>,
+            dan
+            {" "}<span className="font-medium text-[#b52619]">Makam Sunan Ampel</span>.
+            Ketiga situs tersebut tidak hanya menunjukkan perkembangan Islam di Indonesia, tetapi juga memperlihatkan adanya perpaduan antara nilai-nilai Islam dengan budaya lokal yang berlangsung secara harmonis. Oleh karena itu, kajian terhadap ketiga situs ini penting untuk memahami sejarah perkembangan Islam Nusantara,
+             nilai-nilai toleransi dan akulturasi budaya, serta relevansinya dalam kehidupan masyarakat Indonesia pada masa kini.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        </section>
+
+      </section>
+
+      <Footer />
+    </main>
   );
 }
