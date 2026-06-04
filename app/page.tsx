@@ -38,7 +38,7 @@ export default function Home() {
           <article className="hover-card bg-white rounded-lg overflow-hidden border border-black/10">
             <div className="museum-matte">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcKeW-jiNFYlgBaW35DqQJ9vxI-v9iGoNRemEeHBbb8pgO6t0l_aKzztClYjOahc4NDtq-itvOt31oepFZz31Tpz2FwklatbEGKHeonmEGhcqGrGmbypZUa8QgwIdNSS5kbHmnFZoUbx9aG7VQkUinhmuQFyFVh7GCYyYkaIuLCQemO9o-a5cmUVEJ0px-0xkh9rbjLmci3YbV1ELFXRT2PZ0TB9Hzv-3AQv6ZW6NPVGBUCxErfAfYLHjkabj2dsUKHBomfIUkQwo"
+                src="./images/mk.png"
                 alt="Menara Kudus"
                 className="w-full aspect-[4/5] object-cover"
               />
@@ -62,8 +62,8 @@ export default function Home() {
           <article className="hover-card bg-white rounded-lg overflow-hidden border border-black/10">
             <div className="museum-matte">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwiH8ZwXKR3NIKKwl1PS9p6j-wuNT-qgLTVR80OQkDnZwOtrPnP64sQ9m1kxxo6hQnn83LSewSqtnwBK3nvqVx5yFd_oVVQIG4BS1PZmdrE5ld1XeMdeBPB-pF8mMWl4S3b0HRxyXm0EQtdMKSgeRmxoa_Uh_cJANfOQpnRpwRJZZ5LWkzHq6ExDRpfa_0cQfwK7jmT6N2z4OrWLysFXTcv4DywRu-pIzgFHkCeLlgWucKxbd48yyLyuWUtqtu2LzgtyIOS1dVbLg"
-                alt="Masjid Agung Banten"
+                src="./images/mad.png"
+                alt="Masjid Agung Demak"
                 className="w-full aspect-[4/5] object-cover"
               />
             </div>
@@ -73,11 +73,11 @@ export default function Home() {
                 className="text-2xl font-bold"
                 style={{ fontFamily: "Playfair Display" }}
               >
-                Masjid Agung Banten
+                Masjid Agung Demak
               </h2>
 
               <p className="mt-4 text-gray-600">
-                Perpaduan budaya Jawa, Belanda dan Tiongkok.
+                Akulturasi budaya melalui penggunaan atap tajug bertumpang tiga .
               </p>
             </div>
           </article>
@@ -86,7 +86,7 @@ export default function Home() {
           <article className="hover-card bg-white rounded-lg overflow-hidden border border-black/10">
             <div className="museum-matte">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXRrOXpEHyIBcuZY3LN6s5_i5fLuWjCQzdxzQv0IkdU-9YfEX39_VcbxY0ddXxDGHPvJZjc9lbDwDH-1i1XQjT4gvaDAVCG0CMV-DlcnaP4PLq_09AqiDn-LF8hIsFbTMxxDHhGv-CSlGRqpxynoyMzopnngKmc_cevtJ3xAM2-jppWi6dEJNfvw04_FtLBvyBjNM06t-Sa2FUull2t0BfWaZT975ufJmHCYftW4IsIdXiqJ-XsLWT-MUML7-qljRAY0HLcRqv5Kc"
+                src="./images/msa.png"
                 alt="Makam Sunan Ampel"
                 className="w-full aspect-[4/5] object-cover"
               />
@@ -145,7 +145,6 @@ export default function Home() {
 
       </section>
 
-      <Footer />
     </main>
   );
 }

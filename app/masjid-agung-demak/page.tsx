@@ -295,8 +295,6 @@ export default function MasjidAgungDemakPage() {
 </section>
       
 
-<Footer />
-
     </main>
   );
 }

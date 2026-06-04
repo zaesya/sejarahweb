@@ -375,7 +375,6 @@ export default function MenaraKudusPage() {
         </div>
       </section>
 
-      <Footer />
 
     </main>
   );

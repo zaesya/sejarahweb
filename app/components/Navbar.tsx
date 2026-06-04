@@ -39,7 +39,7 @@ export default function Navbar() {
         className="text-2xl md:text-3xl font-bold tracking-tight"
         style={{ fontFamily: "Playfair Display" }}
     >
-        Sejarah
+        Scholarly Archive
     </h1>
 
     {/* Desktop */}

@@ -224,7 +224,7 @@ export default function SunanAmpelPage() {
         </div>
       </section>
 
-      <Footer />
+   
     </main>
   );
 }
